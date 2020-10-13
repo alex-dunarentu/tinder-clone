@@ -3,7 +3,7 @@ import data from "./data.json";
 
 import Header from "./components/header/header.component";
 import Person from "./components/person/person.component";
-
+import Lonely from "./components/lonely/lonely.component";
 import "./App.css";
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
   const [likedUsers, setLikedUsers] = useState([]);
   const [dislikedUsers, setDislikedUsers] = useState([]);
   const [superlikedUsers, setSuperlikedUsers] = useState([]);
-  activeUser = 0;
+  const activeUser = 0;
 
   const removePersonFromData = (peopleSource, userId) => {
     peopleSource.filter((user) => user.id !== userId);
@@ -21,7 +21,7 @@ const App = () => {
     const newPeople = [...people];
     const newLikedUsers = [...likedUsers];
     const newSuperLikedUsers = [...superlikedUsers];
-    const newDislikedUser = [...dislikedUsers];
+    const newDislikedUsers = [...dislikedUsers];
 
     switch (action) {
       case "ADD_TO_LIKED_USERS":
@@ -42,12 +42,31 @@ const App = () => {
           setPeople(removePersonFromData(people, userId));
         }
         break;
+      case "ADD_TO_SUPERLIKED_USERS":
+        if (!people[activeUser].superLikedUsers.includes(userId)) {
+          newPeople[activeUser].superLikedUsers.push(userId);
+          newSuperLikedUsers.push(data[userId]);
+
+          setSuperlikedUsers(newSuperLikedUsers);
+          setPeople(removePersonFromData(people, userId));
+        }
+        break;
+      default:
+        return people;
     }
   };
   return (
     <div className="App">
       <Header />
-      <Person persons={people} />
+      {people[1] ? (
+        <Person
+          person={people[1]}
+          modifySuperficialChoices={modifySuperficialChoices}
+          likedUsers={likedUsers}
+        />
+      ) : (
+        <Lonely />
+      )}
     </div>
   );
 };

@@ -1,13 +1,16 @@
 import React from "react";
-
 import "./person.styles.scss";
 
-const Person = ({ person }) => {
+const Person = ({ person, modifySuperficialChoices, likedUsers }) => {
   const { name, age, desc, image } = person;
   return (
     <div className="Person">
       <div className="PersonPhoto">
-        <img src={`/src/assets/users/${image}`} alt={name} />
+        <img
+          src={process.env.PUBLIC_URL + `/images/users/${image}`}
+          alt={name}
+          id={1}
+        />
       </div>
       <div className="PersonDescription">
         <p>

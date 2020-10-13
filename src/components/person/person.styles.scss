@@ -1,0 +1,15 @@
+.Person {
+  background-color: white;
+  .PersonPhoto img {
+    height: 550px;
+    width: 100%;
+  }
+  .PersonDescription {
+    margin-left: 10px;
+  }
+  .PersonDescription p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+}
