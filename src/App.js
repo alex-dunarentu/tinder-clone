@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import data from "./data.json";
 
 import Header from "./components/header/header.component";
 import Person from "./components/person/person.component";
 import Lonely from "./components/lonely/lonely.component";
+
+import data from "./data.json";
+
 import "./App.css";
 
 const App = () => {
@@ -55,11 +57,13 @@ const App = () => {
         return people;
     }
   };
+  console.log(people);
   return (
     <div className="App">
       <Header />
       {people[1] ? (
         <Person
+          key={people[1].id}
           person={people[1]}
           modifySuperficialChoices={modifySuperficialChoices}
           likedUsers={likedUsers}
