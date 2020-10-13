@@ -1,0 +1,30 @@
+.Header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .LogoContainer {
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    background: white;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .LogoContainer:focus {
+    outline: none;
+    border: 1px solid gray;
+    background: transparent;
+    border-radius: 15px;
+  }
+
+  .TinderLogo .LogoContainer img {
+    width: 70px;
+    height: 40px;
+  }
+}
