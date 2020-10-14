@@ -2,6 +2,7 @@ import React from "react";
 import dislike from "../../assets/misc/dislike.png";
 const Dislike = ({ userId, modifySuperficialChoices }) => (
   <button
+    className="Dislike"
     type="button"
     onClick={() => modifySuperficialChoices(userId, "ADD_TO_DISLIKED_USERS")}
   >

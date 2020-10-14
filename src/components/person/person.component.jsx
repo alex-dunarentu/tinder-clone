@@ -2,7 +2,7 @@ import React from "react";
 import Actions from "../actions/actions.component";
 import "./person.styles.scss";
 
-const Person = ({ person, modifySuperficialChoices }) => {
+const Person = ({ person, modifySuperficialChoices, alertClassName }) => {
   const { name, age, desc, image } = person;
   return (
     <>
@@ -23,6 +23,7 @@ const Person = ({ person, modifySuperficialChoices }) => {
       <Actions
         modifySuperficialChoices={modifySuperficialChoices}
         person={person}
+        alertClassName={alertClassName}
       />
     </>
   );

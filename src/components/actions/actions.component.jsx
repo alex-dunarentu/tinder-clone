@@ -4,7 +4,7 @@ import Dislike from "./dislike";
 import Superlike from "./superlike";
 import "./actions.styles.scss";
 
-const Actions = ({ person, modifySuperficialChoices }) => {
+const Actions = ({ person, modifySuperficialChoices, alertClassName }) => {
   return (
     <div className="Actions">
       <Like
@@ -18,6 +18,7 @@ const Actions = ({ person, modifySuperficialChoices }) => {
       <Superlike
         modifySuperficialChoices={modifySuperficialChoices}
         userId={person.id}
+        alertClassName={alertClassName}
       />
     </div>
   );
