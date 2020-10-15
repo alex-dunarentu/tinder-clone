@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Route, Switch } from "react-router-dom";
 
 import Header from "./components/header/header.component";
 import Person from "./components/person/person.component";
@@ -78,29 +79,31 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {people[1] ? (
-        <Person
-          key={people[1].id}
-          person={people[1]}
-          modifySuperficialChoices={modifySuperficialChoices}
-          alertClassName={alertClassName}
-        />
-      ) : (
-        <Lonely
-          activeUserImage={people[activeUser].image}
-          likedUsers={likedUsers}
-          superLikedUsers={superLikedUsers}
-        />
-      )}
-      {alertSuperLike ? (
-        <Warning
-          superLikeAlertClassName={superLikeAlertClassName}
-          message={"You only have one SuperLike per day."}
-          action={setAlertSuperLike}
-        />
-      ) : (
-        ""
-      )}
+      <Switch>
+        {people[1] ? (
+          <Person
+            key={people[1].id}
+            person={people[1]}
+            modifySuperficialChoices={modifySuperficialChoices}
+            alertClassName={alertClassName}
+          />
+        ) : (
+          <Lonely
+            activeUserImage={people[activeUser].image}
+            likedUsers={likedUsers}
+            superLikedUsers={superLikedUsers}
+          />
+        )}
+        {alertSuperLike ? (
+          <Warning
+            superLikeAlertClassName={superLikeAlertClassName}
+            message={"You only have one SuperLike per day."}
+            action={setAlertSuperLike}
+          />
+        ) : (
+          ""
+        )}
+      </Switch>
     </div>
   );
 };
