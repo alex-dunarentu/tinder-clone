@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
+import MainPage from "./pages/main/main.component";
+import ProfilePage from "./pages/profile/profile.component";
+import MessagesPage from "./pages/messages/messages.component";
+
 import Header from "./components/header/header.component";
-import Person from "./components/person/person.component";
-import Lonely from "./components/lonely/lonely.component";
 import Warning from "./components/warning/warning.component";
 
 import data from "./data.json";
@@ -80,20 +82,22 @@ const App = () => {
     <div className="App">
       <Header />
       <Switch>
-        {people[1] ? (
-          <Person
-            key={people[1].id}
-            person={people[1]}
-            modifySuperficialChoices={modifySuperficialChoices}
-            alertClassName={alertClassName}
-          />
-        ) : (
-          <Lonely
-            activeUserImage={people[activeUser].image}
-            likedUsers={likedUsers}
-            superLikedUsers={superLikedUsers}
-          />
-        )}
+        <Route
+          exact
+          path="/tinder-clone"
+          render={() => (
+            <MainPage
+              people={people}
+              modifySuperficialChoices={modifySuperficialChoices}
+              alertClassName={alertClassName}
+              activeUser={activeUser}
+              likedUsers={likedUsers}
+              superLikedUsers={superLikedUsers}
+            />
+          )}
+        />
+        <Route exact path="/tinder-clone/profile" component={ProfilePage} />
+        <Route exact path="/tinder-clone/messages" component={MessagesPage} />
       </Switch>
       {alertSuperLike ? (
         <Warning

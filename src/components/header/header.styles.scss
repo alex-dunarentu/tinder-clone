@@ -2,8 +2,8 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-
+  align-items: center;
+  height: 3.5rem;
   .LogoContainer {
     cursor: pointer;
     border: none;
@@ -18,7 +18,7 @@
 
   .LogoContainer:focus {
     outline: none;
-  
+
     background: transparent;
     border-radius: 15px;
   }
