@@ -75,7 +75,7 @@ const App = () => {
         return people;
     }
   };
-
+  console.log(alertSuperLike);
   return (
     <div className="App">
       <Header />
@@ -94,16 +94,16 @@ const App = () => {
             superLikedUsers={superLikedUsers}
           />
         )}
-        {alertSuperLike ? (
-          <Warning
-            superLikeAlertClassName={superLikeAlertClassName}
-            message={"You only have one SuperLike per day."}
-            action={setAlertSuperLike}
-          />
-        ) : (
-          ""
-        )}
       </Switch>
+      {alertSuperLike ? (
+        <Warning
+          superLikeAlertClassName={superLikeAlertClassName}
+          message={"You only have one SuperLike per day."}
+          action={setAlertSuperLike}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };
