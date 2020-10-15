@@ -18,3 +18,9 @@
   right: 33.5%;
   background-color: white;
 }
+@media (max-width: 40rem) {
+  .App {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
