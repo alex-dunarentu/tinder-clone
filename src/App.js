@@ -77,7 +77,7 @@ const App = () => {
         return people;
     }
   };
-  console.log(alertSuperLike);
+
   return (
     <div className="App">
       <Header />

@@ -4,10 +4,9 @@
   margin: 0 auto;
 }
 
-
 @media (max-width: 40rem) {
   .App {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 3.5rem);
   }
 }

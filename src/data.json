@@ -1,10 +1,10 @@
 [
   {
     "id": 0,
-    "name": "Alex",
-    "desc": "Student at ETTI",
-    "age": 55,
-    "image": "1.jpg",
+    "name": "",
+    "desc": "",
+    "age": null,
+    "image": "",
     "likedUsers": [],
     "superLikedUsers": [],
     "dislikedUsers": [],

@@ -1,0 +1,73 @@
+.ProfilePage {
+  min-height: calc(100vh - 3.5rem - 10px);
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  border-bottom: 10px solid white;
+  .Title {
+    padding: 20px 0;
+    h1 {
+      margin: 0;
+      text-align: center;
+      color: #fe3c72;
+    }
+    span {
+      color: #424242;
+      display: block;
+      text-align: right;
+      margin-right: 5px;
+    }
+  }
+  .ProfileCreation {
+    form {
+      text-align: center;
+      input {
+        display: block;
+        margin: 0 auto;
+      }
+      .SubmitButton {
+        margin: 10px auto;
+        display: block;
+        background-color: rgba(32, 178, 171, 0.521);
+        color: #424242;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 5px;
+        border: none;
+      }
+      .SubmitButton:focus {
+        outline: none;
+      }
+    }
+    span {
+      margin-top: 20px;
+      color: #424242;
+      display: block;
+      text-align: center;
+    }
+    p {
+      margin-top: 0;
+      text-align: center;
+    }
+    .UploadProfileImage {
+      text-align: center;
+      .ProfileImage img {
+        width: 150px;
+        height: 180px;
+        border: 2px solid white;
+        border-radius: 10px;
+      }
+      button {
+        border: none;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 5px 10px;
+        background-color: rgba(32, 178, 171, 0.521);
+        color: #424242;
+        cursor: pointer;
+      }
+      button:focus {
+        outline: none;
+      }
+    }
+  }
+}
