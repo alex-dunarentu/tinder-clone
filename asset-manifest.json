@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tinder-clone/static/css/main.9c3ad3b7.chunk.css",
-    "main.js": "/tinder-clone/static/js/main.f0ac3357.chunk.js",
-    "main.js.map": "/tinder-clone/static/js/main.f0ac3357.chunk.js.map",
+    "main.css": "/tinder-clone/static/css/main.c4d17e13.chunk.css",
+    "main.js": "/tinder-clone/static/js/main.d2834f20.chunk.js",
+    "main.js.map": "/tinder-clone/static/js/main.d2834f20.chunk.js.map",
     "runtime-main.js": "/tinder-clone/static/js/runtime-main.acd27e62.js",
     "runtime-main.js.map": "/tinder-clone/static/js/runtime-main.acd27e62.js.map",
-    "static/js/2.58ec4c44.chunk.js": "/tinder-clone/static/js/2.58ec4c44.chunk.js",
-    "static/js/2.58ec4c44.chunk.js.map": "/tinder-clone/static/js/2.58ec4c44.chunk.js.map",
+    "static/js/2.47db7e8d.chunk.js": "/tinder-clone/static/js/2.47db7e8d.chunk.js",
+    "static/js/2.47db7e8d.chunk.js.map": "/tinder-clone/static/js/2.47db7e8d.chunk.js.map",
     "index.html": "/tinder-clone/index.html",
-    "precache-manifest.c7f50c8e54f3765e23e5c16a1cc99405.js": "/tinder-clone/precache-manifest.c7f50c8e54f3765e23e5c16a1cc99405.js",
+    "precache-manifest.ddd3ec414d7b24f8cdca480276a8962b.js": "/tinder-clone/precache-manifest.ddd3ec414d7b24f8cdca480276a8962b.js",
     "service-worker.js": "/tinder-clone/service-worker.js",
-    "static/css/main.9c3ad3b7.chunk.css.map": "/tinder-clone/static/css/main.9c3ad3b7.chunk.css.map",
-    "static/js/2.58ec4c44.chunk.js.LICENSE.txt": "/tinder-clone/static/js/2.58ec4c44.chunk.js.LICENSE.txt"
+    "static/css/main.c4d17e13.chunk.css.map": "/tinder-clone/static/css/main.c4d17e13.chunk.css.map",
+    "static/js/2.47db7e8d.chunk.js.LICENSE.txt": "/tinder-clone/static/js/2.47db7e8d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.acd27e62.js",
-    "static/js/2.58ec4c44.chunk.js",
-    "static/css/main.9c3ad3b7.chunk.css",
-    "static/js/main.f0ac3357.chunk.js"
+    "static/js/2.47db7e8d.chunk.js",
+    "static/css/main.c4d17e13.chunk.css",
+    "static/js/main.d2834f20.chunk.js"
   ]
 }
