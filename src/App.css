@@ -4,20 +4,7 @@
   margin: 0 auto;
 }
 
-.SuperLikeAlert {
-  display: none;
-  z-index: 1;
-}
-.IsActive {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  z-index: 1;
-  position: fixed;
-  top: 50%;
-  right: 33.5%;
-  background-color: white;
-}
+
 @media (max-width: 40rem) {
   .App {
     width: 100%;

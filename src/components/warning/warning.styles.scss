@@ -1,0 +1,37 @@
+.SuperLikeAlert {
+  display: none;
+  z-index: 1;
+}
+.IsActive {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  span {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+  }
+  button {
+    width: 30%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(32, 178, 171, 0.521);
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 40rem) {
+  .IsActive {
+    width: 80%;
+  }
+}

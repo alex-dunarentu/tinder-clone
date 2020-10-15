@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "./components/header/header.component";
 import Person from "./components/person/person.component";
 import Lonely from "./components/lonely/lonely.component";
+import Warning from "./components/warning/warning.component";
 
 import data from "./data.json";
 
@@ -92,12 +93,11 @@ const App = () => {
         />
       )}
       {alertSuperLike ? (
-        <div className={superLikeAlertClassName}>
-          <span>You only have one SuperLike per day.</span>
-          <button type="button" onClick={() => setAlertSuperLike(false)}>
-            Go back
-          </button>
-        </div>
+        <Warning
+          superLikeAlertClassName={superLikeAlertClassName}
+          message={"You only have one SuperLike per day."}
+          action={setAlertSuperLike}
+        />
       ) : (
         ""
       )}

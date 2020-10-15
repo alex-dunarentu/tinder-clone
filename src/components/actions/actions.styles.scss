@@ -7,7 +7,7 @@
   }
 
   button {
-    margin-top: 10px;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,9 +29,14 @@
       cursor: default;
     }
   }
-  button:hover {
-    background-color: transparent;
+  button:hover,
+  button:focus {
+    background-color: lightgray;
   }
+  button:focus {
+    outline: none;
+  }
+  
   .NotAllowed:hover {
     background-color: gray;
   }
