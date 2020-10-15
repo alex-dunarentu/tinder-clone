@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tinder-clone/static/css/main.c4d17e13.chunk.css",
-    "main.js": "/tinder-clone/static/js/main.749c1978.chunk.js",
-    "main.js.map": "/tinder-clone/static/js/main.749c1978.chunk.js.map",
+    "main.css": "/tinder-clone/static/css/main.1bbcdbf3.chunk.css",
+    "main.js": "/tinder-clone/static/js/main.bd03b9fe.chunk.js",
+    "main.js.map": "/tinder-clone/static/js/main.bd03b9fe.chunk.js.map",
     "runtime-main.js": "/tinder-clone/static/js/runtime-main.acd27e62.js",
     "runtime-main.js.map": "/tinder-clone/static/js/runtime-main.acd27e62.js.map",
-    "static/js/2.47db7e8d.chunk.js": "/tinder-clone/static/js/2.47db7e8d.chunk.js",
-    "static/js/2.47db7e8d.chunk.js.map": "/tinder-clone/static/js/2.47db7e8d.chunk.js.map",
+    "static/js/2.822a4e6d.chunk.js": "/tinder-clone/static/js/2.822a4e6d.chunk.js",
+    "static/js/2.822a4e6d.chunk.js.map": "/tinder-clone/static/js/2.822a4e6d.chunk.js.map",
     "index.html": "/tinder-clone/index.html",
-    "precache-manifest.2fede076b7075710b95222d52d60931f.js": "/tinder-clone/precache-manifest.2fede076b7075710b95222d52d60931f.js",
+    "precache-manifest.eb22be538965dda8f03a6fd2a8866f9f.js": "/tinder-clone/precache-manifest.eb22be538965dda8f03a6fd2a8866f9f.js",
     "service-worker.js": "/tinder-clone/service-worker.js",
-    "static/css/main.c4d17e13.chunk.css.map": "/tinder-clone/static/css/main.c4d17e13.chunk.css.map",
-    "static/js/2.47db7e8d.chunk.js.LICENSE.txt": "/tinder-clone/static/js/2.47db7e8d.chunk.js.LICENSE.txt"
+    "static/css/main.1bbcdbf3.chunk.css.map": "/tinder-clone/static/css/main.1bbcdbf3.chunk.css.map",
+    "static/js/2.822a4e6d.chunk.js.LICENSE.txt": "/tinder-clone/static/js/2.822a4e6d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.acd27e62.js",
-    "static/js/2.47db7e8d.chunk.js",
-    "static/css/main.c4d17e13.chunk.css",
-    "static/js/main.749c1978.chunk.js"
+    "static/js/2.822a4e6d.chunk.js",
+    "static/css/main.1bbcdbf3.chunk.css",
+    "static/js/main.bd03b9fe.chunk.js"
   ]
 }
