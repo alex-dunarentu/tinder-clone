@@ -3,7 +3,7 @@
     "id": 0,
     "name": "",
     "desc": "",
-    "age": null,
+    "age": 0,
     "image": "",
     "likedUsers": [],
     "superLikedUsers": [],

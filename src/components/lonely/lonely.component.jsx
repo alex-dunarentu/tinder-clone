@@ -7,7 +7,7 @@ const Lonely = ({ activeUserImage, likedUsers, superLikedUsers }) => (
   <div className="Lonely">
     <p>There's no one new around you.</p>
     <span className="pulse">
-      <img src={`/tinder-clone/images/users/${activeUserImage}`} alt="You..." />
+      <img src={`${activeUserImage}`} alt="You..." />
     </span>
     <p>
       {likedUsers.length > 0

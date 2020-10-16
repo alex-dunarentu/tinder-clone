@@ -101,9 +101,10 @@ const App = () => {
       </Switch>
       {alertSuperLike ? (
         <Warning
-          superLikeAlertClassName={superLikeAlertClassName}
+          componentClassName={superLikeAlertClassName}
           message={"You only have one SuperLike per day."}
           action={setAlertSuperLike}
+          buttonText={"Go back"}
         />
       ) : (
         ""
