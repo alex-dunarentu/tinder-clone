@@ -1,105 +1,36 @@
-.ProfileMessage {
-  z-index: 1;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 15px;
-  z-index: 1;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.UserProfile {
+  min-height: calc(100vh - 3.5rem);
   background-color: white;
-  box-shadow: 6px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  span {
+  .UserName {
+    padding-top: 20px;
+    margin: 0;
     text-align: center;
-    margin-bottom: 5px;
-    font-size: 1.1rem;
+    color: #fe3c72;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
-  button {
-    width: 30%;
-    margin: 0 auto;
-    border: none;
-    border-radius: 15px;
-    background-color: rgba(32, 178, 171, 0.521);
-    padding: 5px 10px;
-    font-size: 1rem;
-    font-weight: 500;
+  .UserInfo {
+    text-align: center;
+    margin-top: 20px;
     color: #424242;
+    display: block;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
   }
-}
-
-.ProfilePage {
-  min-height: calc(100vh - 3.5rem - 10px);
-  border-right: 10px solid white;
-  border-left: 10px solid white;
-  border-bottom: 10px solid white;
-  .Title {
-    padding: 20px 0;
-    h1 {
-      margin: 0;
-      text-align: center;
-      color: #fe3c72;
-    }
-    span {
-      color: #424242;
-      display: block;
-      text-align: right;
-      margin-right: 5px;
-    }
+  .UserPhoto img {
+    height: 500px;
+    width: 100%;
   }
-  .ProfileCreation {
-    form {
-      text-align: center;
-      input {
-        display: block;
-        margin: 0 auto;
-      }
-      .SubmitButton {
-        margin: 10px auto;
-        display: block;
-        background-color: rgba(32, 178, 171, 0.521);
-        color: #424242;
-        cursor: pointer;
-        border-radius: 15px;
-        padding: 5px;
-        border: none;
-      }
-      .SubmitButton:focus {
-        outline: none;
-      }
-    }
-    span {
-      margin-top: 20px;
-      color: #424242;
-      display: block;
-      text-align: center;
-    }
+  .UserDetails {
+    margin-left: 10px;
+    padding-bottom: 10px;
     p {
-      margin-top: 0;
-      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 10px 0;
     }
-    .UploadProfileImage {
-      text-align: center;
-      .ProfileImage img {
-        width: 150px;
-        height: 180px;
-        border: 2px solid white;
-        border-radius: 10px;
-      }
-      button {
-        border: none;
-        border-radius: 15px;
-        padding: 5px;
-        margin: 5px 10px;
-        background-color: rgba(32, 178, 171, 0.521);
-        color: #424242;
-        cursor: pointer;
-      }
-      button:focus {
-        outline: none;
-      }
+    span {
+      color: #424242;
     }
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import MainPage from "./pages/main/main.component";
+import ProfileCreation from "./pages/profile-creation/profile-creation.component";
 import ProfilePage from "./pages/profile/profile.component";
 import MessagesPage from "./pages/messages/messages.component";
 
@@ -20,6 +21,7 @@ const App = () => {
 
   const [alertSuperLike, setAlertSuperLike] = useState(false);
   const [graySuperLike, setGraySuperLike] = useState(false);
+  const [triggerRender, setTriggerRender] = useState(false);
   const activeUser = 0;
 
   let superLikeAlertClassName = `SuperLikeAlert ${
@@ -85,18 +87,38 @@ const App = () => {
         <Route
           exact
           path="/tinder-clone"
-          render={() => (
-            <MainPage
-              people={people}
-              modifySuperficialChoices={modifySuperficialChoices}
-              alertClassName={alertClassName}
-              activeUser={activeUser}
-              likedUsers={likedUsers}
-              superLikedUsers={superLikedUsers}
-            />
-          )}
+          render={() =>
+            people[activeUser].name.length > 0 ? (
+              <MainPage
+                people={people}
+                modifySuperficialChoices={modifySuperficialChoices}
+                alertClassName={alertClassName}
+                activeUser={activeUser}
+                likedUsers={likedUsers}
+                superLikedUsers={superLikedUsers}
+              />
+            ) : (
+              <ProfileCreation
+                setTriggerRender={setTriggerRender}
+                profile={people[activeUser]}
+              />
+            )
+          }
         />
-        <Route exact path="/tinder-clone/profile" component={ProfilePage} />
+        <Route
+          exact
+          path="/tinder-clone/profile"
+          render={() =>
+            triggerRender ? (
+              <ProfilePage profile={people[activeUser]} />
+            ) : (
+              <ProfileCreation
+                setTriggerRender={setTriggerRender}
+                profile={people[activeUser]}
+              />
+            )
+          }
+        />
         <Route exact path="/tinder-clone/messages" component={MessagesPage} />
       </Switch>
       {alertSuperLike ? (
