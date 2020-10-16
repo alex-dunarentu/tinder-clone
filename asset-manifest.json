@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tinder-clone/static/css/main.8ba9bd21.chunk.css",
-    "main.js": "/tinder-clone/static/js/main.97d4edf1.chunk.js",
-    "main.js.map": "/tinder-clone/static/js/main.97d4edf1.chunk.js.map",
+    "main.css": "/tinder-clone/static/css/main.ecbbc3cc.chunk.css",
+    "main.js": "/tinder-clone/static/js/main.0eded066.chunk.js",
+    "main.js.map": "/tinder-clone/static/js/main.0eded066.chunk.js.map",
     "runtime-main.js": "/tinder-clone/static/js/runtime-main.acd27e62.js",
     "runtime-main.js.map": "/tinder-clone/static/js/runtime-main.acd27e62.js.map",
-    "static/js/2.5d6ed292.chunk.js": "/tinder-clone/static/js/2.5d6ed292.chunk.js",
-    "static/js/2.5d6ed292.chunk.js.map": "/tinder-clone/static/js/2.5d6ed292.chunk.js.map",
+    "static/js/2.4a534246.chunk.js": "/tinder-clone/static/js/2.4a534246.chunk.js",
+    "static/js/2.4a534246.chunk.js.map": "/tinder-clone/static/js/2.4a534246.chunk.js.map",
     "index.html": "/tinder-clone/index.html",
-    "precache-manifest.9606b58abfae64fb8afceb0f76e32fe5.js": "/tinder-clone/precache-manifest.9606b58abfae64fb8afceb0f76e32fe5.js",
+    "precache-manifest.c4f00f31f0126b3bd534b0c283a0334e.js": "/tinder-clone/precache-manifest.c4f00f31f0126b3bd534b0c283a0334e.js",
     "service-worker.js": "/tinder-clone/service-worker.js",
-    "static/css/main.8ba9bd21.chunk.css.map": "/tinder-clone/static/css/main.8ba9bd21.chunk.css.map",
-    "static/js/2.5d6ed292.chunk.js.LICENSE.txt": "/tinder-clone/static/js/2.5d6ed292.chunk.js.LICENSE.txt"
+    "static/css/main.ecbbc3cc.chunk.css.map": "/tinder-clone/static/css/main.ecbbc3cc.chunk.css.map",
+    "static/js/2.4a534246.chunk.js.LICENSE.txt": "/tinder-clone/static/js/2.4a534246.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.acd27e62.js",
-    "static/js/2.5d6ed292.chunk.js",
-    "static/css/main.8ba9bd21.chunk.css",
-    "static/js/main.97d4edf1.chunk.js"
+    "static/js/2.4a534246.chunk.js",
+    "static/css/main.ecbbc3cc.chunk.css",
+    "static/js/main.0eded066.chunk.js"
   ]
 }
