@@ -1,0 +1,71 @@
+* {
+  text-decoration: none;
+}
+.MessagesWrapper {
+  display: flex;
+  background-color: white;
+  margin: 10px;
+  border-radius: 30px;
+
+  .ProfileIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .ProfileFields span {
+    display: block;
+    color: #424242;
+  }
+  .ProfileFields {
+    .ProfileName {
+      font-weight: bold;
+      color: black;
+    }
+  }
+}
+.MessagesWrapper:hover {
+  box-shadow: 0 0 6px rgb(35, 173, 255);
+}
+.NoMessages {
+  padding: 0 10px;
+  .NoMatches {
+    height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fe3c72;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .NoProfile {
+    height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    .Instruction {
+      color: #fe3c72;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    button {
+      border: none;
+      border-radius: 15px;
+      padding: 5px;
+      margin: 5px 10px;
+      background-color: rgba(32, 178, 171, 0.521);
+      color: #424242;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  }
+}

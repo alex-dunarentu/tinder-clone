@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 
 import MainPage from "./pages/main/main.component";
 import ProfileCreation from "./pages/profile-creation/profile-creation.component";
 import ProfilePage from "./pages/profile/profile.component";
 import MessagesPage from "./pages/messages/messages.component";
+import MessagePage from "./pages/message/message.component.jsx";
 
 import Header from "./components/header/header.component";
 import Warning from "./components/warning/warning.component";
@@ -100,10 +101,15 @@ const App = () => {
                 superLikedUsers={superLikedUsers}
               />
             ) : (
-              <ProfileCreation
-                setTriggerRender={setTriggerRender}
-                profile={people[activeUser]}
-              />
+              <div className="ProfileNotCreated">
+                <span>
+                  After your profile is finished, come back here and meet new
+                  people!
+                </span>
+                <Link to="/tinder-clone/profile">
+                  <button type="button">Create Profile</button>
+                </Link>
+              </div>
             )
           }
         />
@@ -127,9 +133,12 @@ const App = () => {
           render={() => (
             <MessagesPage
               potentialMatches={people[activeUser].likedUsers}
+              profileName={people[activeUser].name}
+              profileImage={people[activeUser].image}
             />
           )}
         />
+        <Route path="/tinder-clone/messages/" component={MessagePage} />
       </Switch>
       {alertSuperLike ? (
         <Warning
