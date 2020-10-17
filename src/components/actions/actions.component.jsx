@@ -8,7 +8,10 @@ import "./actions.styles.scss";
 const Actions = ({ person, modifySuperficialChoices, alertClassName }) => {
   return (
     <div className="Actions">
-      <Rewind />
+      <Rewind
+        modifySuperficialChoices={modifySuperficialChoices}
+        userId={person.id}
+      />
       <Dislike
         modifySuperficialChoices={modifySuperficialChoices}
         userId={person.id}

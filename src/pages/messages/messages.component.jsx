@@ -1,15 +1,17 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import data from "../../data.json";
 import "./messages.styles.scss";
 
-const MessagesPage = ({ potentialMatches, profileName, profileImage }) => {
+const MessagesPage = ({ potentialMatches, matches, profileName }) => {
   const peopleList = data;
+  const matchesList = [...potentialMatches];
+  if (matches.length) matchesList.push(matches[0]);
   // make a go back button when going on chat with person
   return (
     <>
-      {potentialMatches.length > 0 ? (
-        potentialMatches.map((match) => (
+      {matchesList.length > 0 ? (
+        matchesList.map((match) => (
           <Link
             to={{
               pathname: `/tinder-clone/messages/${peopleList[match].name}`,
@@ -30,7 +32,15 @@ const MessagesPage = ({ potentialMatches, profileName, profileImage }) => {
               </div>
               <div className="ProfileFields">
                 <span className="ProfileName">{peopleList[match].name}</span>
-                <span>Let's hope {peopleList[match].name} likes you too!</span>
+                {matches[0] === peopleList[match].id ? (
+                  <span>
+                    You superliked {peopleList[match].name}, notification sent!
+                  </span>
+                ) : (
+                  <span>
+                    Let's hope {peopleList[match].name} will like you too!
+                  </span>
+                )}
               </div>
             </div>
           </Link>

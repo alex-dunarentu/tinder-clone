@@ -13,6 +13,7 @@ import Warning from "./components/warning/warning.component";
 import data from "./data.json";
 
 import "./App.css";
+import userEvent from "@testing-library/user-event";
 
 const App = () => {
   const [people, setPeople] = useState(data);
@@ -77,6 +78,7 @@ const App = () => {
         }
         break;
       case "REWIND":
+        alert("You tried to use a paid feature that is cooming soon.")
         break;
       default:
         return people;
@@ -133,6 +135,7 @@ const App = () => {
           render={() => (
             <MessagesPage
               potentialMatches={people[activeUser].likedUsers}
+              matches={people[activeUser].superLikedUsers}
               profileName={people[activeUser].name}
               profileImage={people[activeUser].image}
             />

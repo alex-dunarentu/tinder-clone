@@ -24,8 +24,8 @@
 
   {
     "id": 2,
-    "name": "Emily",
-    "desc": "Actress",
+    "name": "Gal",
+    "desc": "Wonder Woman",
     "age": 35,
     "image": "3.jpg",
     "likedUsers": [],
