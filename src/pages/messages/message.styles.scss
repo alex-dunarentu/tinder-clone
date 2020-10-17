@@ -1,0 +1,18 @@
+.MessageWrapper {
+  display: flex;
+  .ProfileIcon img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .ProfileFields span {
+    display: block;
+    color: #424242;
+  }
+  .ProfileFields {
+    .ProfileName {
+      font-weight: bold;
+      color: black;
+    }
+  }
+}

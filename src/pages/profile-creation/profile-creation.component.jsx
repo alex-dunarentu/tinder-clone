@@ -27,7 +27,6 @@ const ProfileCreation = ({ setTriggerRender, profile }) => {
       alert("Age must be 18 or above.");
     } else if (images.length === 0) {
       alert("You must upload an image");
-      clear();
     } else {
       setMessage(true);
       profile.name = name;

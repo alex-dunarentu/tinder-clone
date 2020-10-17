@@ -75,6 +75,8 @@ const App = () => {
           setAlertSuperLike(true);
         }
         break;
+      case "REWIND":
+        break;
       default:
         return people;
     }
@@ -119,7 +121,15 @@ const App = () => {
             )
           }
         />
-        <Route exact path="/tinder-clone/messages" component={MessagesPage} />
+        <Route
+          exact
+          path="/tinder-clone/messages"
+          render={() => (
+            <MessagesPage
+              potentialMatches={people[activeUser].likedUsers}
+            />
+          )}
+        />
       </Switch>
       {alertSuperLike ? (
         <Warning
