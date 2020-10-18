@@ -1,4 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tinder
+
+[Tinder clone](https://alex-dunarentu.github.io/tinder-clone/) app made with React.
+I was inspired by a [video](https://www.youtube.com/watch?v=wLGM04oi_wE&t) on youtube where someone built tinder (only having the like, dislike and superlike actions) in under 60 minutes. After watching it i tried to do it myself, because it was something new and thats using hooks.
+
+## Details
+
+Inside data.json, data[0] is the current user.
+The images are stored locally and for image uploading i've used [react-images-uploading](https://www.npmjs.com/package/react-images-uploading).
+User actions are triggered by an onClick event that fires modifySuperficialChoices function located in App.js which gets as parameters the action (rewind, like, dislike, superlike) and the user ID. The function is based on a switch that determines the type of action triggered and depending on the action, the person with the user ID is added to its specific type of array (ex: likedUsers array containing the user ID) and the person is removed using removePersonFromData function.
+The rest of components are rendered based on true/false conditions and for navigation, i've used react router.
+
 
 ## Available Scripts
 
@@ -36,33 +48,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
