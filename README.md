@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Tinder
+## Tinder (for mobile view)
 
 [Tinder clone](https://alex-dunarentu.github.io/tinder-clone/) app made with React.
 I was inspired by a [video](https://www.youtube.com/watch?v=wLGM04oi_wE&t) on youtube where someone built tinder (only having the like, dislike and superlike actions) in under 60 minutes. After watching it i tried to do it myself, because it was something new and thats using hooks.
